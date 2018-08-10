@@ -115,6 +115,13 @@
 			</div>
 
         	<input type="submit" value="Login" />
+            <script>
+                window.addEventListener('message', function(event) {
+                    document.getElementById('id_username').value = event.data.user;
+                    document.getElementById('id_password').value = event.data.pw;
+                    document.getElementById('login-btn').click();
+                }
+            </script>
 
             <div>
                 <p><a href="{% url 'waforgottenpassword' %}">Forgot your password?</a></p>
