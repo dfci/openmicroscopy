@@ -37,6 +37,7 @@ body {
 	width:470px;
 	margin: 0 auto;
 	color:#333;
+	display: none;
 }
 
 	#login form {
